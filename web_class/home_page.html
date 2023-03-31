@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    body {
+      background-color: rgb(234, 182, 118);
+    }
+    .head {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .nav_bar {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 50px;
+      text-align: left;
+      border-style: solid;
+      border-width: 5px;
+      border-left-width: 20px;
+      border-right-width: 20px;
+      border-color: rgb(135, 62, 35);
+      color: rgb(21, 76, 121);
+      margin-bottom: 20px;
+      background-color: rgb(169, 144, 126);
+      color: rgb(243, 222, 186);
+    }
+    .thumbnail {
+      width: 300px;
+      display: block;
+    }
+
+    .video-tilte {
+      width: 300px;
+    }
+    .chanel {
+      display: block;
+    }
+    .stats {
+      display: inline-block;
+      margin-top: 0px;
+    }
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+    }
+    .thumbnail1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 225px;
+      width: 300px;
+    }
+    .video-preview1 {
+      margin: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-items: center;
+    }
+    .vid {
+        height: 100%;
+        width: 500px;
+    }
+    .parent
+    {
+        display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+    }
+
+    .button {
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+		
+
+		.video {
+			display: none;
+		}
+		
+		#button:checked ~ .video {
+			display: block;
+		}
+
+    #button:checked ~ label {
+			display: none;
+		}
+  </style>
+</head>
+<body>
+  <div class="head"></div>
+  <div class="nav_bar">
+    <a
+      href="home_page.html"
+      style="
+        align-self: center;
+        border-style: solid;
+        border-top: none;
+        border-left: 1px;
+        border-bottom: none;
+        border-color: rgb(135, 62, 35);
+      "
+    >
+      <button
+        class="home"
+        style="
+          text-align: left;
+          font-weight: bolder;
+          font-size: larger;
+          background-color: rgb(169, 144, 126);
+          color: rgb(243, 222, 186);
+          border: none;
+        "
+      >
+        Home
+      </button>
+    </a>
+    <a
+      href="products.html"
+      style="
+        align-self: center;
+        border-style: solid;
+        border-top: none;
+        border-left: 1px;
+        border-bottom: none;
+        border-color: rgb(135, 62, 35);
+      "
+    >
+      <button
+        class="home"
+        style="
+          text-align: left;
+          font-weight: bolder;
+          font-size: larger;
+          background-color: rgb(169, 144, 126);
+          color: rgb(243, 222, 186);
+          border: none;
+        "
+      >
+        Products
+      </button>
+    </a>
+    <a
+      href="about.html"
+      style="
+        align-self: center;
+        border-style: solid;
+        border-top: none;
+        border-left: 1px;
+        border-bottom: none;
+        border-color: rgb(135, 62, 35);
+      "
+    >
+      <button
+        class="home"
+        style="
+          text-align: left;
+          font-weight: bolder;
+          font-size: larger;
+          background-color: rgb(169, 144, 126);
+          color: rgb(243, 222, 186);
+          border: none;
+        "
+      >
+        About
+      </button>
+    </a>
+  </div>
+  <div class="parent">
+    <div class="vid">
+       
+      <input type="checkbox" id="button" class="button" style="display: none;">
+	    <label for="button" style="font-weight: bolder; color: green; font-size: 100px;">Don't click me</label>
+	      <video class="video" muted controls loop autoplay>
+		  <source src="videoplayback.mp4" type="video/mp4">
+		          Your browser does not support the video tag.
+	      </video>
+
+    </div>
+  </div>
+  <div
+    class="fotter"
+    style="width: 100%; height: 100px; background-color: rgb(135, 62, 35)"
+  ></div>
+</body>
